@@ -6,7 +6,7 @@ module.exports = {
       "lists", 
       [
         {
-          name: "User",
+          name: "Patient",
           createdAt: new Date(),
           updatedAt: new Date(),
         },

@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const {
     index: findUsers,
+    show: findUser,
     showUser: findTheUser,
     update: updateUser,
     destroy: deleteUser,
@@ -31,6 +32,7 @@ router.post("/signup", register);
 
 // User routes
 router.get("/users", findUsers);
+router.get("/user/:id", findUser);
 router.get("/user", authenticated, findTheUser);
 router.patch("/user", authenticated, updateUser);
 router.delete("/user", authenticated, deleteUser);

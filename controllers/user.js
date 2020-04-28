@@ -25,6 +25,19 @@ exports.index = async (req, res) => {
   }
 };
 
+exports.show = async (req, res) => {
+  try {
+    const users = await user.findOne({
+      ...userParam,
+      where: { id: req.params.id },
+    });
+    res.send({ data: users });
+  } catch (error) {
+    res.status(500).send({ message: "Failed to view a user!" })
+    console.log(error);
+  }
+};
+
 exports.showUser = async (req, res) => {
   try {
     const users = await user.findOne({

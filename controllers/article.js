@@ -7,7 +7,7 @@ const articleParam = {
       attributes: ["id", "fullName"],
     },
   ],
-  attributes: { exclude: ["createdAt", "updatedAt"] },
+  attributes: { exclude: ["updatedAt"] },
   order: [
     ['id', 'ASC'],
   ],
@@ -19,7 +19,7 @@ exports.index = async (req, res) => {
       const articles = await article.findAll({
         ...articleParam,
         where: {
-          createdAt: new Date(req.query.createdAt)
+          createdAt: req.query.createdAt
         },
       });
 
