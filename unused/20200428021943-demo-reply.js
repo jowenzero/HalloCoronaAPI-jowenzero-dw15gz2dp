@@ -17,18 +17,6 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
-        {
-          response: "Thanks! (Ray)",
-          consultationId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          response: "Thanks! (Kiyazi)",
-          consultationId: 2,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
       ], 
       {}
     );

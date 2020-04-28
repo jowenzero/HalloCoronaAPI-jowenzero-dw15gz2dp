@@ -66,7 +66,7 @@ exports.showArticle = async (req, res) => {
 
 exports.create = async (req, res) => {
   try {
-    if (req.user.listId === 0) {
+    if (req.user.listId === 2) {
       const newArticle = await article.create(req.body);
       const articles = await article.findOne({
         ...articleParam,

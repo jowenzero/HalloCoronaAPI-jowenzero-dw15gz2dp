@@ -7,7 +7,7 @@ const consultationParam = {
       attributes: ["id", "username"],
     },
   ],
-  attributes: { exclude: ["createdAt", "updatedAt"] },
+  attributes: { exclude: ["updatedAt"] },
   order: [
     ['id', 'ASC'],
   ],
@@ -19,6 +19,9 @@ const replyParam = {
       model: reply,
       attributes: ["id", "response"],
     },
+  ],
+  order: [
+    ['id', 'ASC'],
   ],
 }
 
@@ -74,6 +77,27 @@ exports.showConsultation = async (req, res) => {
     }
   } catch (error) {
     res.status(500).send({ message: "Failed to view user consultations!" })
+    console.log(error);
+  }
+};
+
+exports.showReply = async (req, res) => {
+  try {
+    if (req.user.listId === 1) {
+      const replies = await reply.findAll({
+        where: { consultationId: req.params.id },
+        attributes: { exclude: ["createdAt", "updatedAt"] },
+        order: [
+          ['id', 'ASC'],
+        ],
+      });
+      res.status(200).send({ data: replies });
+    }
+    else {
+      res.status(401).send({ message: "You're unauthorized!" })
+    }
+  } catch (error) {
+    res.status(500).send({ message: "Failed to view user reply!" })
     console.log(error);
   }
 };

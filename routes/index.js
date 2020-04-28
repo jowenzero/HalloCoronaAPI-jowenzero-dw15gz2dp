@@ -18,6 +18,7 @@ const {
     index: findConsultations,
     show: findConsultation,
     showConsultation: findUserConsultation,
+    showReply: findUserReply,
     create: createConsultation,
     createReply: createReply,
     update: updateConsultation,
@@ -30,13 +31,6 @@ const { authenticated } = require("../middlewares/auth");
 router.post("/signin", login);
 router.post("/signup", register);
 
-// User routes
-router.get("/users", findUsers);
-router.get("/user/:id", findUser);
-router.get("/user", authenticated, findTheUser);
-router.patch("/user", authenticated, updateUser);
-router.delete("/user", authenticated, deleteUser);
-
 // Article routes
 router.get("/articles", findArticles);
 router.get("/article/:id", findArticle);
@@ -47,9 +41,17 @@ router.post("/articles", authenticated, createArticle);
 router.get("/consultations", authenticated, findConsultations);
 router.get("/consultation/:id", authenticated, findConsultation);
 router.get("/user/consultation", authenticated, findUserConsultation);
+router.get("/user/reply/:id", authenticated, findUserReply);
 router.post("/consultation", authenticated, createConsultation);
 router.post("/consultation/:id/reply", authenticated, createReply);
 router.patch("/consultation/:id", authenticated, updateConsultation);
+
+// User routes
+router.get("/users", findUsers);
+router.get("/user/:id", findUser);
+router.get("/user", authenticated, findTheUser);
+router.patch("/user", authenticated, updateUser);
+router.delete("/user", authenticated, deleteUser);
 
 
 module.exports = router;
