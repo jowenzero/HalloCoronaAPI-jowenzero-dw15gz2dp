@@ -4,7 +4,16 @@ module.exports = (sequelize, DataTypes) => {
     "article", 
     {
       title: DataTypes.STRING,
-      description: DataTypes.STRING(1000)
+      tags: {
+        type: DataTypes.STRING,
+        set(value) {
+          return this.setDataValue("tags", value.toString());
+        },
+        get() {
+          return this.getDataValue("tags") && this.getDataValue("tags").split(",")
+        }
+      },
+      description: DataTypes.STRING(3000)
     }, 
     {}
   );
