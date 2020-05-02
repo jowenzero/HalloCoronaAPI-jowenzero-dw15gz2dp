@@ -1,28 +1,30 @@
 const express = require("express");
 const router = express.Router();
 const {
-    index: findUsers,
-    show: findUser,
-    showUser: findTheUser,
-    update: updateUser,
-    destroy: deleteUser,
+  index: findUsers,
+  show: findUser,
+  showUser: findTheUser,
+  update: updateUser,
+  destroy: deleteUser,
+  upload: uploadUserPic,
 } = require("../controllers/user");
 const { login, register } = require("../controllers/auth");
 const {
-    index: findArticles,
-    show: findArticle,
-    showArticle: findUserArticle,
-    create: createArticle,
+  index: findArticles,
+  show: findArticle,
+  showArticle: findUserArticle,
+  create: createArticle,
 } = require("../controllers/article");
 const {
-    index: findConsultations,
-    show: findConsultation,
-    showConsultation: findUserConsultation,
-    showReply: findUserReply,
-    create: createConsultation,
-    createReply: createReply,
-    update: updateConsultation,
-  } = require("../controllers/consultation");
+  index: findConsultations,
+  show: findConsultation,
+  showConsultation: findUserConsultation,
+  showReply: findUserReply,
+  create: createConsultation,
+  createReply: createReply,
+  update: updateConsultation,
+} = require("../controllers/consultation");
+const upload = require('../config/upload.config.js');
 
 // Middlewares
 const { authenticated } = require("../middlewares/auth");
@@ -47,6 +49,7 @@ router.post("/consultation/:id/reply", authenticated, createReply);
 router.patch("/consultation/:id", authenticated, updateConsultation);
 
 // User routes
+router.post("/user/upload", upload, uploadUserPic);
 router.get("/users", findUsers);
 router.get("/user/:id", findUser);
 router.get("/user", authenticated, findTheUser);

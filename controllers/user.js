@@ -13,6 +13,15 @@ const userParam = {
   ],
 };
 
+exports.upload = async (req, res) => {
+  try {
+    res.status(200).send(req.file)
+  } catch (error) {
+    res.status(500).send({ message: "Failed to upload user picture!" })
+    console.log(error);
+  }
+};
+
 exports.index = async (req, res) => {
   try {
     const users = await user.findAll({
