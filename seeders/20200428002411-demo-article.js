@@ -34,8 +34,8 @@ Setelah dicuci, kamu dapat merendamnya selama beberapa saat agar dapat mengurang
 &nbsp;
 
 Membasuh dan merendam bahan makanan dengan air juga dapat menghilangkan pestisida dan insektisida yang digunakan. Jika zat tersebut masuk ke tubuh, beberapa masalah kesehatan dapat terjadi dan mungkin saja membahayakan, seperti iritasi pernapasan, alergi kulit, dan lainnya.`,
-          createdAt: new Date("2020-05-01"),
-          updatedAt: new Date("2020-05-01"),
+          createdAt: new Date("2020-05-03"),
+          updatedAt: new Date("2020-05-03"),
         },
         {
           title: "Ini Alasan Buah Dan Sayur Dari Supermarket Harus Dicuci",
@@ -66,8 +66,8 @@ Setelah dicuci, kamu dapat merendamnya selama beberapa saat agar dapat mengurang
 &nbsp;
 
 Membasuh dan merendam bahan makanan dengan air juga dapat menghilangkan pestisida dan insektisida yang digunakan. Jika zat tersebut masuk ke tubuh, beberapa masalah kesehatan dapat terjadi dan mungkin saja membahayakan, seperti iritasi pernapasan, alergi kulit, dan lainnya.`,
-          createdAt: new Date("2020-05-01"),
-          updatedAt: new Date("2020-05-01"),
+          createdAt: new Date("2020-05-03"),
+          updatedAt: new Date("2020-05-03"),
         },
         {
           title: "Ini Efek Virus Corona Pada Kesehatan Jantung",
@@ -98,8 +98,8 @@ Setelah dicuci, kamu dapat merendamnya selama beberapa saat agar dapat mengurang
 &nbsp;
 
 Membasuh dan merendam bahan makanan dengan air juga dapat menghilangkan pestisida dan insektisida yang digunakan. Jika zat tersebut masuk ke tubuh, beberapa masalah kesehatan dapat terjadi dan mungkin saja membahayakan, seperti iritasi pernapasan, alergi kulit, dan lainnya.`,
-          createdAt: new Date("2020-05-01"),
-          updatedAt: new Date("2020-05-01"),
+          createdAt: new Date("2020-05-03"),
+          updatedAt: new Date("2020-05-03"),
         },
         {
           title: "Alasan Diffuser Antiseptik Sebaiknya Dihindari",
@@ -130,8 +130,8 @@ Setelah dicuci, kamu dapat merendamnya selama beberapa saat agar dapat mengurang
 &nbsp;
 
 Membasuh dan merendam bahan makanan dengan air juga dapat menghilangkan pestisida dan insektisida yang digunakan. Jika zat tersebut masuk ke tubuh, beberapa masalah kesehatan dapat terjadi dan mungkin saja membahayakan, seperti iritasi pernapasan, alergi kulit, dan lainnya.`,
-          createdAt: new Date("2020-05-01"),
-          updatedAt: new Date("2020-05-01"),
+          createdAt: new Date("2020-05-03"),
+          updatedAt: new Date("2020-05-03"),
         },
         {
           title: "Benarkah Diet Vegan Picu Batu Ginjal?",
@@ -162,8 +162,8 @@ Setelah dicuci, kamu dapat merendamnya selama beberapa saat agar dapat mengurang
 &nbsp;
 
 Membasuh dan merendam bahan makanan dengan air juga dapat menghilangkan pestisida dan insektisida yang digunakan. Jika zat tersebut masuk ke tubuh, beberapa masalah kesehatan dapat terjadi dan mungkin saja membahayakan, seperti iritasi pernapasan, alergi kulit, dan lainnya.`,
-          createdAt: new Date("2020-05-01"),
-          updatedAt: new Date("2020-05-01"),
+          createdAt: new Date("2020-05-03"),
+          updatedAt: new Date("2020-05-03"),
         },
         {
           title: "PSBB Tetap Bekerja, Ikuti 6 Tips Aman Ini",
@@ -194,8 +194,8 @@ Setelah dicuci, kamu dapat merendamnya selama beberapa saat agar dapat mengurang
 &nbsp;
 
 Membasuh dan merendam bahan makanan dengan air juga dapat menghilangkan pestisida dan insektisida yang digunakan. Jika zat tersebut masuk ke tubuh, beberapa masalah kesehatan dapat terjadi dan mungkin saja membahayakan, seperti iritasi pernapasan, alergi kulit, dan lainnya.`,
-          createdAt: new Date("2020-05-01"),
-          updatedAt: new Date("2020-05-01"),
+          createdAt: new Date("2020-05-03"),
+          updatedAt: new Date("2020-05-03"),
         },
         {
           title: "Demam Pada Anak Naik Turun, Ibu Lakukan Ini",
@@ -226,8 +226,8 @@ Setelah dicuci, kamu dapat merendamnya selama beberapa saat agar dapat mengurang
 &nbsp;
 
 Membasuh dan merendam bahan makanan dengan air juga dapat menghilangkan pestisida dan insektisida yang digunakan. Jika zat tersebut masuk ke tubuh, beberapa masalah kesehatan dapat terjadi dan mungkin saja membahayakan, seperti iritasi pernapasan, alergi kulit, dan lainnya.`,
-          createdAt: new Date("2020-05-01"),
-          updatedAt: new Date("2020-05-01"),
+          createdAt: new Date("2020-05-03"),
+          updatedAt: new Date("2020-05-03"),
         },
         {
           title: "Cara Menurunkan Kadar Kolesterol Dengan Olahraga",
@@ -258,8 +258,8 @@ Setelah dicuci, kamu dapat merendamnya selama beberapa saat agar dapat mengurang
 &nbsp;
 
 Membasuh dan merendam bahan makanan dengan air juga dapat menghilangkan pestisida dan insektisida yang digunakan. Jika zat tersebut masuk ke tubuh, beberapa masalah kesehatan dapat terjadi dan mungkin saja membahayakan, seperti iritasi pernapasan, alergi kulit, dan lainnya.`,
-          createdAt: new Date("2020-05-01"),
-          updatedAt: new Date("2020-05-01"),
+          createdAt: new Date("2020-05-03"),
+          updatedAt: new Date("2020-05-03"),
         },
       ], 
       {}
