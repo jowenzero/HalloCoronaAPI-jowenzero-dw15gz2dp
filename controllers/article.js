@@ -1,4 +1,5 @@
 const { article, user } = require("../models");
+const { Op } = require("sequelize");
 
 const articleParam = {
   include: [
