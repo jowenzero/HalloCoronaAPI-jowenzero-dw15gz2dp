@@ -14,24 +14,20 @@ const articleParam = {
 }
 
 exports.index = async (req, res) => {
+  const NOW = new Date();
+  const TODAY_START = new Date().setHours(7,0,0,0);
   try {
-    if (req.query.createdAt) {
-      const articles = await article.findAll({
-        ...articleParam,
-        where: {
-          createdAt: req.query.createdAt
-        },
-      });
+    const articles = await article.findAll({
+      ...articleParam,
+      where: {
+        createdAt: {
+          [Op.gt]: TODAY_START,
+          [Op.lt]: NOW,
+        }
+      },
+    });
 
-      res.status(200).send({ data: articles });
-    }
-    else {
-      const articles = await article.findAll({
-        ...articleParam,
-      });
-
-      res.status(200).send({ data: articles });
-    }
+    res.status(200).send({ data: articles });
   } catch (error) {
     res.status(500).send({ message: "Failed to view article!" })
     console.log(error);
