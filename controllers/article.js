@@ -16,7 +16,7 @@ const articleParam = {
 
 exports.index = async (req, res) => {
   const NOW = new Date();
-  const TODAY_START = new Date().setHours(7,0,0,0);
+  const TODAY_START = new Date().setHours(0,0,0,0);
   try {
     const articles = await article.findAll({
       ...articleParam,
