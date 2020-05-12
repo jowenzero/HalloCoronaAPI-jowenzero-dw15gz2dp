@@ -36,6 +36,22 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          fullName: "Kiyazi Nishigami",
+          phone: "0895-4842-8721",
+          bornDate: new Date("2002-05-17"),
+          age: 20,
+          height: 185,
+          weight: 70,
+          gender: "Male",
+          subject: "Masuk Angin",
+          liveConsult: new Date("2020-05-04"),
+          description: "Sakit Perut",
+          status: "Waiting Approve Live Consultation",
+          userId: 3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ], 
       {}
     );

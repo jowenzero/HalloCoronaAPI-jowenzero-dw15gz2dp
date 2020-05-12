@@ -9,7 +9,7 @@ const consultationParam = {
   ],
   attributes: { exclude: ["updatedAt"] },
   order: [
-    ['id', 'ASC'],
+    ['id', 'DESC'],
   ],
 };
 
